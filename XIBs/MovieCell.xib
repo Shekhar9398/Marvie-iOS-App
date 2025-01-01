@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCell" id="gTV-IL-0wX" customClass="MovieCell" customModule="Marvie_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvB-yi-gBr">
+                        <rect key="frame" x="10" y="9.9999999999999858" width="170" height="237.66666666666663"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w97-VS-Put">
+                        <rect key="frame" x="10" y="267.66666666666669" width="170" height="22.333333333333314"/>
+                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="linear1"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="w97-VS-Put" secondAttribute="bottom" constant="10" id="8aN-Z2-tZv"/>
+                <constraint firstItem="w97-VS-Put" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="F7R-SR-HmZ"/>
+                <constraint firstAttribute="trailing" secondItem="w97-VS-Put" secondAttribute="trailing" constant="10" id="Jni-qZ-ggm"/>
+                <constraint firstItem="xvB-yi-gBr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="KSP-jn-us3"/>
+                <constraint firstItem="xvB-yi-gBr" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="XUg-hD-qh7"/>
+                <constraint firstItem="w97-VS-Put" firstAttribute="top" secondItem="xvB-yi-gBr" secondAttribute="bottom" constant="20" id="jtq-Lw-xHh"/>
+                <constraint firstItem="xvB-yi-gBr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="qPj-y9-1pN"/>
+            </constraints>
+            <size key="customSize" width="190" height="285"/>
+            <connections>
+                <outlet property="movieImageView" destination="xvB-yi-gBr" id="PMe-Gp-lGV"/>
+                <outlet property="movieLabel" destination="w97-VS-Put" id="fCd-ab-5Ut"/>
+            </connections>
+            <point key="canvasLocation" x="187.78625954198472" y="102.46478873239437"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="linear1">
+            <color red="0.12200000137090683" green="0.18000000715255737" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
